@@ -1,0 +1,21 @@
+{
+  "gameName": "贪吃蛇大作战",
+  "rules": {
+    "initialSnakeLength": 4,
+    "gridSize": 30,
+    "speedLevels": [300, 200, 100],
+    "scoreToLevelUp": 10,
+    "foodTypes": [
+      {"type": "apple", "score": 2, "count": 1},
+      {"type": "orange", "score": 1, "count": 2},
+      {"type": "banana", "effect": "slowDown", "count": 1}
+    ],
+    "obstacles": {"mine": {"count": 3, "damage": "death"}},
+    "gameOverConditions": ["wallCollision", "mineCollision", "selfCollision"]
+  },
+  "controls": {
+    "keyboard": {"up": "ArrowUp", "down": "ArrowDown", "left": "ArrowLeft", "right": "ArrowRight"},
+    "touch": true
+  },
+  "storage": {"highScoreKey": "snakeGameHighScore"}
+}
